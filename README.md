@@ -13,7 +13,7 @@ The project is on car renting.The project has two modules
 ADMIN:
 After successful login Admin can do the following things–
 
-1. OWNER
+1. ADD OWNER
 2. MANAGE OWNER DETAILS(EDIT/DELETE)
 3. ADD CAR
 4. MANAGE CAR DETAILS(EDIT/DELETE)
