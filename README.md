@@ -24,8 +24,8 @@ After successful login Admin can do the following things–
 9. LOGOUT
 
 CUSTOMER:
-1. Register
-2. Login
+1. REGISTER
+2. LOGIN
 
 After successful login Customer can do the following things–
 
