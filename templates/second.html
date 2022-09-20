@@ -1,0 +1,48 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Car rental</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    </head>
+    <body style="background-color: powderblue">
+        {% include 'navbar.html'%}
+        <div align="center">
+            <br><br><br>
+            <h1>    WELCOME WELCOME !!!! </h1>
+            <h4> Now, Please Kindly Login </h4>
+        </div>
+        
+        <br>
+        <div class="jumbotron">
+            <h1 style="text-align:center" class="display-4">Hello, Reader!</h1>
+            <hr class="my-4">
+                <div align="center" >
+                    <div class="col-lg-6">
+                        <p>
+                            <h1> AGENT </h1>
+                        </p>
+                        <a class="btn btn-primary btn-lg" style="width:150px; text-align:center" href="agentlogin" role="button"> <h4> LOGIN </h4> </a>
+                    </div>
+                </div>
+
+            <hr class="my-4">
+                <div align="center" >
+                    <div class="col-lg-6">
+                        <p>
+                            <h1> CUSTOMER </h1>
+                        </p>
+                        <a class="btn btn-primary btn-lg" style="width:150px; text-align:center" href="custsignup" role="button"> <h4> SIGN UP</h4> </a><br><br>
+                        <a class="btn btn-primary btn-lg" style="width:150px; text-align:center" href="custlogin" role="button"> <h4> LOGIN </h4> </a>
+                    </div>
+                </div>
+            <hr class="my-4">
+        </div>
+    </body>
+    {% include 'footer.html'%}
+</html>
+

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Edit Customer</title>
+    </head>
+    <body style="background-color: powderblue;">
+        <div align="center"><br><br>
+            {% include 'navbara.html' %}
+            <br><br>
+            <h1> <u> EDIT CUSTOMER INFORMATION </u> </h1><br><br>
+            
+            <fieldset>
+                <form action="/updatec" method="post">
+                    <div class="jumbotron">
+                        <table border="5" cellpadding="10px" cellspacing="10px">
+                            <tr align="center" style="border-color: black;">
+                                <td>
+                                    <label for="cid"> <h4> <b> CUST_ID: </b> </h4> </label>
+                                </td>
+                                <td><h4>
+                                    <input type="number"  name="cid" id="cid" style="background-color: white;" value="{{clist[0]}}" ></h4>
+                                </td>
+                            </tr>
+
+                            <tr align="center" style="border-color: black;">
+                                <td>
+                                    <label for="cfname"> <h4> <b> CUST_FNAME: </b> </h4> </label>                                
+                                </td>
+                                <td><h4>
+                                    <input type="text"  name="cfname" id="cfname" style="background-color: white;" value="{{clist[1]}}" ></h4>
+                                </td>
+                            </tr>
+
+                            <tr align="center" style="border-color: black;">
+                                <td>
+                                    <label for="clname"> <h4> <b> CUST_LNAME: </b> </h4> </label>                                
+                                </td>
+                                <td><h4>
+                                    <input type="text"  name="clname" id="clname" style="background-color: white;" value="{{clist[2]}}" ></h4>
+                                </td>
+                            </tr>
+
+
+                            <tr align="center" style="border-color: black;">
+                                <td>
+                                    <label for="cloc"> <h4> <b> LOCATION: </b> </h4> </label>
+                                </td>
+                                <td><h4>
+                                    <input type="text"  name="cloc" id="cloc" style="background-color: white;" value="{{clist[3]}}" ></h4>
+                                </td>
+                            </tr>
+
+                            <tr align="center" style="border-color: black;">
+                                <td>                                    
+                                    <label for="cph"> <h4> <b> CUST_PHONE_NO: </b> </h4> </label>                                
+                                </td>
+                                <td><h4>
+                                    <input type="number"  name="cph" id="cph" style="background-color: white;" value="{{clist[4]}}" ></h4>
+                                </td>
+                            </tr>
+
+                            <tr align="center" style="border-color: black;">
+                                <td>                                   
+                                    <label for="cemail"> <h4> <b> CUST_EMAIL: </b> </h4> </label>                                
+                                </td>
+                                <td><h4>
+                                    <input type="email"  name="cemail" id="cemail" style="background-color: white;" value="{{clist[5]}}" ></h4>
+                                </td>
+                            </tr>
+
+                            <tr align="center" style="border-color: black;">
+                                <td>                                   
+                                    <label for="cpassw"> <h4> <b> CUST_PASSWORD: </b> </h4> </label>                                
+                                </td>
+                                <td><h4>
+                                    <input type="text"  name="cpassw" id="cpassw" style="background-color: white;" value="{{clist[6]}}" ></h4>
+                                </td>
+                            </tr>
+
+                            <tr align="center" style="border-color: black;">
+                                <td>
+                                    <label for="cd"><h4> <b> CUST_DRIVING_LICENSE_NO: </b> </h4> </label>
+                                </td>
+                                <td><h4>
+                                    <input type="text" name="cd" id="cd" style="background-color: white; border-color: black;" value="{{clist[7]}}" ></h4>
+                                </td>
+                            </tr>
+
+                            <tr align="center" style="border-color: black;">
+                                <td>                                   
+                                    <label for="ced"> <h4> <b> CUST_DL_EXPIRY_DATE: </b> </h4> </label>                                
+                                </td>
+                                <td><h4>
+                                    <input type="date"  name="ced" id="ced" style="background-color: white;" value="{{clist[8]}}" ></h4>
+                                </td>
+                            </tr>
+
+                            <tr align="center" style="border-color: black;">
+                                <td colspan="2"> <h4> <input type="reset"  name="Reset" value="RESET" style="border-color: black; background-color: rgb(206, 199, 199);"></h4> </td>
+                            </tr>
+                            <br>
+                            <tr align="center" style="border-color: black;">
+                                <td colspan="2"> <h4> <input type="submit" name="submit" value="SUBMIT" style="border-color: black; background-color: rgb(206, 199, 199);"> </h4> </td>
+                            </tr>
+                        </table>
+                        <br><br>
+                        <a href="/viewcust" class="btn btn-primary btn-lg"> <h4> VIEW CUSTOMERS </h4> </a>
+                    </div>
+                </form>
+                <br>
+            </fieldset> 
+        </div> 
+    </body>
+</html>

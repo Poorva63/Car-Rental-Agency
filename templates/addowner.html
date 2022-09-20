@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Add Owner</title>
+    </head>
+
+    <body style="background-color: powderblue;">
+        <div align="center"><br><br>
+            {% include 'navbara.html' %}
+            <br><br>
+            <h1> <u> ADD NEW OWNER INFORMATION </u> </h1><br><br>
+            
+            <fieldset>
+                <form action="/inso" method="post">
+                    <div class="jumbotron">
+                        <table border="5" cellpadding="10px" cellspacing="10px">
+                            <tr align="center" style="border-color: black;">
+                                <td>
+                                    <label for="oid"> <h4> <b> ID: </b> </h4> </label>
+                                </td>
+                                <td><h4>
+                                    <input type="number"  name="oid" id="oid" style="background-color: white;"></h4>
+                                </td>
+                            </tr>
+
+                            <tr align="center" style="border-color: black;">
+                                <td>
+                                    <label for="oname"> <h4> <b> NAME: </b> </h4> </label>                                
+                                </td>
+                                <td><h4>
+                                    <input type="text"  name="oname" id="oname" style="background-color: white;"></h4>
+                                </td>
+                            </tr>
+
+                            <tr align="center" style="border-color: black;">
+                                <td>
+                                    <label for="oadd"> <h4> <b> ADDRESS: </b> </h4> </label>
+                                </td>
+                                <td><h4>
+                                    <input type="text"  name="oadd" id="oadd" style="background-color: white;"></h4>
+                                </td>
+                            </tr>
+
+                            <tr align="center" style="border-color: black;">
+                                <td>                                    
+                                    <label for="ocon"> <h4> <b> CONTACT: </b> </h4> </label>                                
+                                </td>
+                                <td><h4>
+                                    <input type="number"  name="ocon" id="ocon" style="background-color: white;"></h4>
+                                </td>
+                            </tr>
+
+                            <tr align="center" style="border-color: black;">
+                                <td>                                   
+                                    <label for="oemail"> <h4> <b> Email: </b> </h4> </label>                                
+                                </td>
+                                <td><h4>
+                                    <input type="email"  name="oemail" id="oemail" style="background-color: white;"></h4>
+                                </td>
+                            </tr>
+
+                            <tr align="center" style="border-color: black;">
+                                <td>
+                                    <label for="totalc"><h4> <b> Total No Of Car: </b> </h4> </label>
+                                </td>
+                                <td><h4>
+                                    <input type="number" name="totalc" id="totalc" style="background-color: white; border-color: black;"></h4>
+                                </td>
+                            </tr>
+
+                            <tr align="center" style="border-color: black;">
+                                <td colspan="2"> <h4> <input type="reset"  name="Reset" value="RESET" style="width:150px; border-color: black; background-color: rgb(206, 199, 199);"></h4> </td>
+                            </tr>
+                            <br>
+                            <tr align="center" style="border-color: black;">
+                                <td colspan="2"> <h4> <input type="submit" name="submit" value="SUBMIT" style="width:150px; border-color: black; background-color: rgb(206, 199, 199);"> </h4> </td>
+                            </tr>
+                        </table>
+                        <br><br>
+                        <a href="/viewowners" class="btn btn-primary btn-lg"> <h4> VIEW OWNERS</h4> </a>
+                    </div>
+                </form>
+                <br>
+            </fieldset> 
+        </div> 
+    </body>
+</html>

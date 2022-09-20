@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAR RENTAL AGENCY</title>
+</head>
+<body style="background-color: powderblue;">
+    {% include 'navbara.html'%} <br><br><br>
+    <div align="center">
+        <h1> <u> CUSTOMERS DETAILS!! </u></h1><br>
+        <fieldset>
+            <div class="jumbotron">
+                <table border="5" cellpadding="10px"cellspacing="10px">
+                    <thead style="background-color: antiquewhite; border: 10px; border-color: black;">
+                        <h3>
+                        <td>
+                            <div align="center">
+                                <br><b> CUST_ID </b><br><br>
+                            </div> 
+                        </td>
+                        <td>
+                            <div align="center">
+                                <br><b> CUST_FNAME </b><br><br>
+                            </div> 
+                        </td>
+                        <td>
+                            <div align="center">
+                                <br><b> CUST_LNAME </b><br><br>
+                            </div>
+                        </td> 
+                        <td>
+                            <div align="center">
+                                <br><b> LOCATION </b> <br><br>
+                            </div>
+                        </td>
+                        <td>
+                            <div align="center">
+                                <br><b> CUST_PHONE_NO </b><br><br> 
+                            </div>
+                        </td>
+                        <td>
+                            <div align="center">
+                                <br><b> CUST_EMAIL </b><br><br> 
+                            </div> 
+                        </td>
+                        <td>
+                            <div align="center">
+                                 <br><b> CUST_PASSWORD </b><br><br>
+                            </div>
+                        </td> 
+                        <td>
+                            <div align="center">
+                                 <br><b> CUST_DRIVING_LICENSE_NO </b><br><br> 
+                            </div> 
+                        </td>
+                        <td>
+                            <div align="center">
+                                 <br><b> CUST_DL_EXPIRY_DATE </b><br><br> 
+                            </div> 
+                        </td>
+                        <td>
+                            <div align="center">
+                                 <br><b> UPDATE</b><br><br>
+                            </div> 
+                        </td>
+                        <td>
+                            <div align="center">
+                                 <br><b> DELETE</b><br><br>
+                            </div> 
+                        </td>
+                        </h3>
+                    </div>
+                    </thead>
+                    {% for i in clist %}
+                    <tr style="border: 10px; border-color: black;">
+                        <td> 
+                            <div align="center">
+                                <b> {{i[0]}} </b>
+                            </div>
+                        </td>
+                        <td> 
+                            <div align="center">
+                                <b> {{i[1]}} </b> 
+                            </div>
+                        </td>
+                        <td> 
+                            <div align="center">
+                                <b> {{i[2]}} </b>
+                            </div>
+                        </td>
+                        <td> 
+                            <div align="center">
+                                <b> {{i[3]}} </b> 
+                            </div>
+                        </td>
+                        <td> 
+                            <div align="center">
+                                <b> {{i[4]}} </b> 
+                            </div>
+                        </td>
+                        <td> 
+                            <div align="center">
+                                <b> {{i[5]}} </b> 
+                            </div>
+                        </td>
+                        <td> 
+                            <div align="center">
+                                <b> {{i[6]}} </b> 
+                            </div>
+                        </td>
+                        <td> 
+                            <div align="center">
+                                <b> {{i[7]}} </b> 
+                            </div>
+                        </td>
+                        <td> 
+                            <div align="center">
+                                <b> {{i[8]}} </b> 
+                            </div>
+                        </td>                        
+                        <td>
+                            <div align="center">
+                                <a href="/editcust?CUST_ID={{i[0]}}" class="btn btn-primary btn-lg" role="button">EDIT</a>
+                            </div>
+                        </td>
+                        <td>
+                            <div align="center">
+                                <a href="/deletec?CUST_ID={{i[0]}}" class="btn btn-primary btn-lg" role="button">DELETE</a>
+                            </div>
+                        </td>
+
+                    </tr>
+                    {% endfor %}
+                </table><br><br><br>
+                <a href="agentfirstpage" class="bn btn-primary btn-lg" role="button" > <b> GO TO AGENT HOME PAGE </b> </a><br><br>
+                <a href="viewpayment" class="bn btn-primary btn-lg" role="button" > <b> PAYMENT DETAILS OF CUSTOMER </b> </a><br><br>
+                
+            </div>
+        </fieldset>
+        
+    </div>
+</body>
+</html>

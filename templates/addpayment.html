@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAR RENTAL AGENCY</title>
+</head>
+
+<body style="background-color: powderblue;">
+    <div align="center"><br><br>
+        {% include 'navbarc.html' %}
+        <br><br>
+        <h1> <u> ADD PAYMENT INFORMATION </u> </h1><br><br>
+
+        <fieldset>
+            <form action="/insp" method="post">
+                <div class="jumbotron">
+                    <table border="5" cellpadding="10px" cellspacing="10px">
+                        <tr align="center" style="border-color: black;">
+                            <h1> <u> FILL FORM PROPERLY!!</u></h1>
+                            <td>
+                                <label for="p1">
+                                    <h4> <b> CUST NAME: </b> </h4>
+                                </label>
+                            </td>
+                            <td>
+                                <h4>
+                                    <input type="text" name="p1" id="p1" style="background-color: white;">
+                                </h4>
+                            </td>
+                        </tr>
+                        <tr>
+                        <td>
+                            <label for="a">
+                                <h4> <b> Email: </b> </h4>
+                            </label>
+                        </td>
+                        <td>
+                            <h4>
+                                <input type="email" name=   "ak" id="a" style="background-color: white;">
+                            </h4>   
+                        </td>
+                        </tr>
+
+                        </tr>
+
+
+                        <tr align="center" style="border-color: black;">
+                            <td>
+                                <label for="pp">
+                                    <h4> <b> CAR TYPE: </b> </h4>
+                                </label>
+                            </td>
+                            <td>
+                                <h4>
+                                    <select name="pp">
+                                        <option value="SUV">
+                                            <h4> <b> SUV </b></h4>
+                                        </option>
+                                        <option value="Compact-SUV">Compact SUV </option>
+                                        <option value="Sedan"> Sedan </option>
+                                    </select>
+                            </td>
+                        </tr>
+
+                        <tr align="center" style="border-color: black;">
+                            <td>
+                                <label for="p3">
+                                    <h4> <b> CUST CONTACT NO: </b> </h4>
+                                </label>
+                            </td>
+                            <td>
+                                <h4>
+                                    <input type="number" name="p3" id="p3" style="background-color: white;">
+                                </h4>
+                            </td>
+                        </tr>
+
+                        <tr align="center" style="border-color: black;">
+                            <td>
+                                <label for="p4">
+                                    <h4> <b> RENTAL_DATE: </b> </h4>
+                                </label>
+                            </td>
+                            <td>
+                                <h4>
+                                    <input type="date" name="p4" id="p4" style="background-color: white;">
+                                </h4>
+                            </td>
+                        </tr>
+
+                        <tr align="center" style="border-color: black;">
+                            <td>
+                                <label for="p5">
+                                    <h4> <b> RETURN_DATE: </b> </h4>
+                                </label>
+                            </td>
+                            <td>
+                                <h4>
+                                    <input type="date" name="p5" id="p5" style="background-color: white;">
+                                </h4>
+                            </td>
+                        </tr>
+
+                        <tr align="center" style="border-color: black;">
+                            <td>
+                                <label for="payment">
+                                    <h4> <b> PAYMENT_MODE: </b> </h4>
+                                </label>
+                            </td>
+                            <td>
+                                <h4>
+                                    <select name="payment">
+                                        <option value="GPAY">
+                                            <h4> <b> GPAY </b></h4>
+                                        </option>
+                                        <option value="PAYTM"> PAYTM </option>
+                                        <option value="Cash"> CASH </option>
+                                    </select>
+                            </td>
+                        </tr>
+
+                        <tr align="center" style="border-color: black;">
+                            <td>
+                                <label for="p2">
+                                    <h4> <b> CAR BRAND: </b> </h4>
+                                </label>
+                            </td>
+
+                            <td>
+                                <h4>
+                                    <select name="p2">
+                                        <!-- {% for c in carlist %} -->
+                                        <option value="Mercedes">Mercedes</option>
+                                        <!-- {% endfor %} -->
+                                        <option value="Maruti Suzuki">Maruti Suzuki</option>
+                                        <option value="Nissan">Nissan</option>
+                                        <option value="Tata">Tata</option>
+                                        <option value="Mahindra">Mahindra</option>
+                                        <option value="Renault"> Renault </option>
+                                        <option value="Hyundai"> Hyundai </option>
+                                    </select>
+                            </td>
+                        </tr>
+
+                        <tr align="center" style="border-color: black;">
+
+                            <!-- {% for c in carlist %} -->
+                            <!-- {{c[9]}}  -->
+                            <!-- {% endfor %} -->
+
+
+                        </tr>
+
+                        <tr align="center" style="border-color: black;">
+                            <td colspan="2">
+                                <h4> <input type="reset" name="Reset" value="RESET"
+                                        style="width:150px; border-color: black; background-color: rgb(206, 199, 199);">
+                                </h4>
+                            </td>
+                        </tr>
+                        <br>
+                        <tr align="center" style="border-color: black;">
+                            <td colspan="2">
+                                <h4> <input type="submit" name="reset" value="SUBMIT"
+                                        style="width:150px; border-color: black; background-color: rgb(206, 199, 199);">
+                                </h4>
+                            </td>
+                        </tr>
+                    </table>
+                    <br><br>
+                </div>
+            </form>
+            <br>
+        </fieldset>
+    </div>
+</body>
+
+</html>

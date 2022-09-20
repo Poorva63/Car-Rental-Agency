@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Owner</title>
+</head>
+<body style="background-color: powderblue;">
+    <div align="center"><br><br>
+        {% include 'navbara.html' %}
+        <br><br>
+        <h1> <u> EDIT OWNER INFORMATION </u> </h1><br><br>
+        
+        <fieldset>
+            <form action="/update" method="post">
+                <div class="jumbotron">
+                    <table border="5" cellpadding="10px" cellspacing="10px">
+                        <tr align="center" style="border-color: black;">
+                            <td>                                
+                                <label for="oid"> <h4> <b> OWNER_ID </b> </h4> </label>                            
+                            </td>
+                            <td><h4>
+                                <input type="number"  name="oid" id="oid" style="background-color: white;" value="{{olist[0]}}" ></h4>
+                            </td>
+                        </tr>
+
+                        <tr align="center" style="border-color: black;">
+                            <td>                                
+                                <label for="oname"> <h4> <b> OWNER_NAME </b> </h4> </label>                            
+                            </td>
+                            <td><h4>
+                                <input type="text"  name="oname" id="oname" style="background-color: white;" value="{{olist[1]}}" ></h4>
+                            </td>
+                        </tr>
+
+                        <tr align="center" style="border-color: black;">
+                            <td>                               
+                                <label for="oadd"> <h4> <b> ADDRESS: </b> </h4> </label>                            
+                            </td>
+                            <td><h4>
+                                <input type="text"  name="oadd" id="oadd" style="background-color: white;" value="{{olist[2]}}" ></h4>
+                            </td>
+                        </tr>
+
+                        <tr align="center" style="border-color: black;">
+                            <td>                                
+                                <label for="ocon"> <h4> <b> OWNER_CONTACT_NO </b> </h4> </label>                            
+                            </td>
+                            <td><h4>
+                                <input type="number"  name="ocon" id="ocon" style="background-color: white;" value="{{olist[3]}}" ></h4>
+                            </td>
+                        </tr>
+
+                        <tr align="center" style="border-color: black;">
+                            <td>                                
+                                <label for="oemail"> <h4> <b> OWNER_Mail </b> </h4> </label>                           
+                            </td>
+                            <td><h4>
+                                <input type="email"  name="oemail" id="oemail" style="background-color: white;" value="{{olist[4]}}" ></h4>
+                            </td>
+                        </tr>
+
+                        <tr align="center" style="border-color: black;">
+                            <td>
+                                <label for="totalc"><h4> <b> NO_OF_CAR_OWN </b> </h4> </label>
+                            </td>
+                            <td><h4>
+                                <input type="number" name="totalc" id="totalc" style="background-color: white; border-color: black;" value="{{olist[5]}}" ></h4>
+                            </td>
+                        </tr>
+
+                        <tr align="center" style="border-color: black;">
+                            <td colspan="2"> <h4> <input type="reset"  name="Reset" value="RESET" style="border-color: black; background-color: rgb(206, 199, 199);"></h4> </td>
+                        </tr>
+                        <br>
+                        <tr align="center" style="border-color: black;">
+                            <td colspan="2"> <h4> <input type="submit" name="submit" value="SUBMIT" style="border-color: black; background-color: rgb(206, 199, 199);"> </h4> </td>
+                        </tr>
+                    </table>
+                    <br><br>
+                    <a href="/viewowners" class="btn btn-primary btn-lg"> <h4> VIEW OWNERS </h4> </a>
+                </div>
+            </form>
+            <br>
+        </fieldset> 
+    </div> 
+</body>
+</html>

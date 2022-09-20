@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Agent Login</title>
+    </head>
+    <body style="background-color:powderblue">
+        <div align="center"><br><br><br>
+        {% include 'navbar.html'%}<br>
+        <h1 style="background-color: azure; height:50px;"> <u> LOGIN AS AGENT!! </u> </h1><br><br>
+            <fieldset>
+            
+                <form action="/alog" method="post">
+                    <div class="jumbotron">
+                        <table border="5" cellpadding="10px" cellspacing="10px">
+                            <tr align="center" style="border-color: black;">
+                                <td>
+                                    
+                                    <label for="email"> <h4> <b> EMAIL: </b> </h4> </label>
+                                
+                                </td>
+                                <td><h4>
+                                    <input type="email"  name="email" id="email1" style="background-color: white;"></h4>
+                                </td>
+                            </tr>
+
+                            <tr align="center" style="border-color: black;">
+                                <td>
+                                    <label for="password"><h4> <b> PASSWORD: </b> </h4> </label>
+                                </td>
+                                <td><h4>
+                                    <input type="password" name="password" id="password1" style="background-color: white; border-color: black;"></h4>
+                                </td>
+                            </tr>
+
+                            <tr align="center" style="border-color: black;">
+                                <td colspan="2"> <h4> <input type="reset"  name="Reset" value="RESET" style="width: 150px ; border-color: black; background-color: rgb(206, 199, 199);"></h4> </td>
+                            </tr>
+                            <br>
+                            <tr align="center" style="border-color: black;">
+                                <td colspan="2"> <h4> <input type="submit" name="Submit" value="SUBMIT" style="width: 150px; border-color: black; background-color: rgb(206, 199, 199);"> </h4> </td>
+                            </tr>
+                        </table>
+                    </div>
+                </form>
+                <h3>
+                <a href="home" class="btn btn-primary btn-lg" role="button"> <h4> HOME PAGE </h4> </a><br><br>
+                <a href="second" class="btn btn-primary btn-lg" role="button"> <h4> GO BACK </h4> </a><br><br>
+                </h3>
+            </fieldset>
+        </div>
+    </body>
+</html>
+
+
+    

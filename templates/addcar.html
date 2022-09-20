@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Add Car</title>
+    </head>
+    <body style="background-color: powderblue;">
+        <div align="center"><br><br>
+            {% include 'navbara.html' %}
+            <br><br>
+            <h1> <u> ADD NEW CAR INFORMATION </u> </h1><br><br>
+            
+            <fieldset>
+                <form action="/inscar" method="post">
+                    <div class="jumbotron">
+                        <table border="5" cellpadding="10px" cellspacing="10px">
+                            <tr align="center" style="border-color: black;">
+                                <td>
+                                    <label for="carid"> <h4> <b> CAR_ID: </b> </h4> </label>
+                                </td>
+                                <td><h4>
+                                    <input type="number"  name="carid" id="carid" style="background-color: white;"></h4>
+                                </td>
+                            </tr>
+
+                            <tr align="center" style="border-color: black;">
+                                <td>
+                                    <label for="cbrand"> <h4> <b> CAR_BRAND: </b> </h4> </label>                                
+                                </td>
+                                <td><h4>
+                                    <input type="text"  name="cbrand" id="cbrand" style="background-color: white;"></h4>
+                                </td>
+                            </tr>
+
+                            <tr align="center" style="border-color: black;">
+                                <td>
+                                    <label for="cmodel"> <h4> <b> CAR_MODEL: </b> </h4> </label>                                
+                                </td>
+                                <td><h4>
+                                    <input type="text"  name="cmodel" id="cmodel" style="background-color: white;"></h4>
+                                </td>
+                            </tr>
+
+                            <tr align="center" style="border-color: black;">
+                                <td>
+                                    <label for="ccol"> <h4> <b> CAR_COLOR: </b> </h4> </label>                                
+                                </td>
+                                <td><h4>
+                                    <input type="text"  name="ccol" id="ccol" style="background-color: white;"></h4>
+                                </td>
+                            </tr>
+
+
+                            <tr align="center" style="border-color: black;">
+                                <td>
+                                    <label for="ccap"> <h4> <b> CAR_CAPACITY: </b> </h4> </label>
+                                </td>
+                                <td><h4>
+                                    <input type="number"  name="ccap" id="ccap" style="background-color: white;"></h4>
+                                </td>
+                            </tr>
+
+                            <tr align="center" style="border-color: black;">
+                                <td>                                    
+                                    <label for="ctype"> <h4> <b> CAR_TYPE: </b> </h4> </label>                                
+                                </td>
+                                <td><h4>
+                                    <input type="text"  name="ctype" id="ctype" style="background-color: white;"></h4>
+                                </td>
+                            </tr>
+
+                            <tr align="center" style="border-color: black;">
+                                <td>                                   
+                                    <label for="cnplate"> <h4> <b> CAR_NO_PLATE: </b> </h4> </label>                                
+                                </td>
+                                <td><h4>
+                                    <input type="text"  name="cnplate" id="cnplate" style="background-color: white;"></h4>
+                                </td>
+                            </tr>
+
+                            <tr align="center" style="border-color: black;">
+                                <td>                                   
+                                    <label for="co"> <h4> <b> OWNER_ID: </b> </h4> </label>                                
+                                </td>
+                                <td><h4>
+                                    <input type="number"  name="co" id="co" style="background-color: white;"></h4>
+                                </td>
+                            </tr>
+
+                            <tr align="center" style="border-color: black;">
+                                <td>                                   
+                                    <label for="coname"> <h4> <b> OWNER_NAME: </b> </h4> </label>                                
+                                </td>
+                                <td><h4>
+                                    <input type="text"  name="coname" id="coname" style="background-color: white;"></h4>
+                                </td>
+                            </tr>
+
+                            <tr align="center" style="border-color: black;">
+                                <td>                                   
+                                    <label for="pa"> <h4> <b> PAYMENT AMOUNT: </b> </h4> </label>                                
+                                </td>
+                                <td><h4>
+                                    <input type="number"  name="pa" id="pa" style="background-color: white;"></h4>
+                                </td>
+                            </tr>
+
+
+                            <tr align="center" style="border-color: black;">
+                                <td colspan="2"> <h4> <input type="reset"  name="Reset" value="RESET" style="width:150px; border-color: black; background-color: rgb(206, 199, 199);"></h4> </td>
+                            </tr>
+                            <br>
+                            <tr align="center" style="border-color: black;">
+                                <td colspan="2"> <h4> <input type="submit" name="submit" value="SUBMIT" style="width:150px; border-color: black; background-color: rgb(206, 199, 199);"> </h4> </td>
+                            </tr>
+                        </table>
+                        <br><br>
+                        <a href="/viewcars" class="btn btn-primary btn-lg"> <h4> VIEW OWNERS </h4></a>
+                    </div>
+                </form>
+                <br>
+            </fieldset> 
+        </div> 
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CAR RENTAL AGENCY</title>
+    </head>
+    <body style="background-color: powderblue;">
+        {% include 'navbarc.html'%} <br><br><br><br>
+        <div align="center">
+            <h1 style="background-color:azure; height:50px;"> <b> <u> CUSTOMER YOU HAVE LOGGED IN SUCCESSFULLY!! </u></b></h1>
+            <br>
+                <h1> <b> THANKYOU FOR LOGGING </b></h1>
+                <h1> <b> WELCOME TO OUR CAR RENTAL AGENCY PAGE </b></h1>
+                <br><br>
+            <div class="jumbotron">
+                <hr class="my-4">
+                <h1>  TO SEE CAR DETAILS </h1>
+                <h1>  CLICK BELOW </h1><br>
+                <a href="custcardetails" class="btn btn-primary btn-lg" role="button"> <h3> CAR DETAILS </h3></a><br><br>
+                <hr class="my-4">
+                <h1>  TO SEE CAR OWNER DETAILS </h1>
+                <h1>  CLICK BELOW </h1><br>
+                <a href="custownerdetails" class="btn btn-primary btn-lg" role="button"> <h3> OWNER DETAILS </h3></a><br><br>
+                <hr class="my-4">
+                <h1>  TO CONTACT AGENT  </h1>
+                <h1>  CLICK BELOW </h1><br>
+                <a href="custagentdetails" class="btn btn-primary btn-lg" role="button"> <h3> AGENT DETAILS </h3></a><br><br>
+                <hr class="my-4">
+                <h1> CLICK BELOW FOR PAYMENT </h1><br>
+                <a href="addpayment" class="btn btn-primary btn-lg" role="button"> <h3> PAYMENT </h3></a><br><br>
+                <hr class="my-4">
+            </div><br><br>
+        </div>
+    </body>
+    {% include 'footer.html'%}
+</html>

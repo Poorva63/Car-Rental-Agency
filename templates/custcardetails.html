@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAR RENTAL AGENCY</title>
+</head>
+<body style="background-color: powderblue;">
+    {% include 'navbarc.html'%} <br><br><br>
+    <div align="center">
+        <h1> <b> <u>CARS DETAILS!!</u> </b></h1><br>
+        <fieldset>
+            <div class="jumbotron">
+                <table border="5" cellpadding="10px"cellspacing="10px">
+                    <thead style="background-color: antiquewhite; border: 10px; border-color: black;">
+                        <h3>
+                        <td>
+                            <div align="center">
+                                <br><b> CAR ID </b><br><br>
+                            </div> 
+                        </td>
+                        <td>
+                            <div align="center">
+                                <br><b> CAR BRAND </b><br><br>
+                            </div> 
+                        </td>
+                        <td>
+                            <div align="center">
+                                <br><b> CAR MODEL </b><br><br>
+                            </div>
+                        </td> 
+                        <td>
+                            <div align="center">
+                                <br><b> CAR COLOR </b> <br><br>
+                            </div>
+                        </td>
+                        <td>
+                            <div align="center">
+                                <br><b> CAR CAPACITY </b><br><br> 
+                            </div>
+                        </td>
+                        <td>
+                            <div align="center">
+                                <br><b> CAR TYPE </b><br><br> 
+                            </div> 
+                        </td>
+
+                        <td>
+                            <div align="center">
+                                <br><b> CAR NO PLATE </b><br><br> 
+                            </div> 
+                        </td>
+                        
+                        <td>
+                            <div align="center">
+                                 <br><b> OWNER ID </b><br><br>
+                            </div>
+                        </td> 
+
+                        <td>
+                            <div align="center">
+                                 <br><b> OWNER NAME </b><br><br>
+                            </div>
+                        </td> 
+
+                        <td>
+                            <div align="center">
+                                 <br><b> CAR RENT AMOUNT </b><br><br>
+                            </div>
+                        </td> 
+
+                        </h3>
+                    </div>
+                    </thead>
+                    {% for i in carlist %}
+                    <tr style="border: 10px; border-color: black;">
+                        <td> 
+                            <div align="center">
+                                <b> {{i[0]}} </b>
+                            </div>
+                        </td>
+                        <td> 
+                            <div align="center">
+                                <b> {{i[1]}} </b> 
+                            </div>
+                        </td>
+                        <td> 
+                            <div align="center">
+                                <b> {{i[2]}} </b>
+                            </div>
+                        </td>
+                        <td> 
+                            <div align="center">
+                                <b> {{i[3]}} </b> 
+                            </div>
+                        </td>
+                        <td> 
+                            <div align="center">
+                                <b> {{i[4]}} </b> 
+                            </div>
+                        </td>
+                        <td> 
+                            <div align="center">
+                                <b> {{i[5]}} </b> 
+                            </div>
+                        </td>
+                        <td> 
+                            <div align="center">
+                                <b> {{i[6]}} </b> 
+                            </div>
+                        </td>
+                        <td> 
+                            <div align="center">
+                                <b> {{i[7]}} </b> 
+                            </div>
+                        </td>
+                        <td> 
+                            <div align="center">
+                                <b> {{i[8]}} </b> 
+                            </div>
+                        </td>
+
+                        <td> 
+                            <div align="center">
+                                <b> {{i[9]}} </b> 
+                            </div>
+                        </td>
+
+                    </tr>
+                    {% endfor %}
+                </table><br><br><br>
+            </div>
+        </fieldset>
+        <h1>  TO RENT A CAR </h1>
+        <h2>  HERE ARE AGENT DETAILS </h2>
+        <h2>  KINDLY CLICK ON BELOW BUTTON </h2>
+        <h2>  AND CONTACT </h2><br>
+        <a href="custagentdetails" class="bn btn-primary btn-lg" role="button">  <b> AGENT DETAILS</b> </a><br><br><br>
+        <h1> <b> <u> FOR PAYMENT</u></b> </h1><br>
+        <a href="addpayment" class="btn btn-primary btn-lg" role="button"> <b> CLICK HERE </b></a><br><br>
+    </div>
+</body>
+{% include 'footer.html'%}
+</html>

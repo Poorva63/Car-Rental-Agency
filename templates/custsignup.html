@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Customer Sign up </title>
+    </head>
+    <body style="background-color:powderblue">
+        <div align="center"><br><br><br>
+            {% include 'navbar.html'%}
+            <h1 style="background-color: azure; height:50px;"><b> <u> WELCOME TO SIGN UP PAGE!!</u></b></h1><br><br>
+            <fieldset>
+                <form action="/insc" method="post">
+                    <div class="jumbotron">
+                        <table border="5" cellpadding="15px" cellspacing="10px">
+                            
+
+                            <tr align="center" style="border-color: black;">
+                                <td>
+                                    <label for="name1"> <h4> <b> First Name:</b></h4> </label>
+                                </td>
+                                <td><h4>
+                                    <input type="text" name="name1" id="fname" style="background-color: white;" required></h4>
+                                </td>
+                            </tr>
+
+                            <tr align="center" style="border-color: black;">
+                                <td>
+                                    <label for="name2"> <h4> <b> Last Name: </b></h4> </label>
+                                </td>
+                                <td><h4>
+                                    <input type="text" name="name2" id="lname" style="background-color: white;" required></h4>
+                                </td>
+                            </tr>
+
+                            <tr align="center" style="border-color: black;">
+                                <td>
+                                    <label for="loc">  <h4> <b> Location:</b></h4> </label>
+                                </td>
+                                <td><h4>
+                                    <input type="text" name="loc" id="loc" style="background-color: white;" required></h4>
+                                </td>
+                            </tr>
+
+                            <tr align="center" style="border-color: black;">
+                                <td>
+                                    <label for="contact"> <h4> <b> Contact: </b></h4> </label>
+                                </td>
+                                <td><h4>
+                                    <input type="number" name="contact" id="Contact" style="background-color: white;" required></h4>
+                                </td>
+                            </tr>
+
+                            <tr align="center" style="border-color: black;">
+                                <td>
+                                    <label for="email"> <h4> <b> Email: </b></h4> </label>
+                                </td>
+                                <td><h4>
+                                    <input type="email" name="email" id="email" style="background-color: white;" required></h4>
+                                </td>
+                            </tr>
+                            
+                            <tr align="center" style="border-color: black;">
+                                <td>
+                                    <label for="password"> <h4> <b> Password: </b></h4> </label>
+                                </td>
+                                <td><h4>
+                                    <input type="password" name="password" id="password" style="background-color: white;" required></h4>
+                                </td>
+                            </tr>
+                                    
+                            <tr align="center" style="border-color: black;">
+                                <td>
+                                    <label for="dlic"> <h4> <b> Driving License No:</b></h4> </label>
+                                </td>
+                                <td><h4>
+                                    <input type="text" name="dlic" id="dlic" style="background-color: white;"></h4>
+                                </td>
+                            </tr>
+
+                            <tr align="center" style="border-color: black;">
+                                <td>
+                                    <label for="dxd"> <h4> <b> Driving Expiry Date: </b></h4> </label>
+                                </td>
+                                <td><h2>
+                                    <input type="date" name="dxd" id="dxd" style="background-color: white;"></h2>
+                                </td>
+                            </tr>
+                                    
+                            <tr align="center" style="border-color: black;">
+                                <td colspan="2">
+                                    <h2>
+                                            <input type="reset" value="RESET" style=" width: 200px; border-color: black; background-color: rgb(206, 199, 199);">
+                                    </h2> 
+                                </td>
+                            </tr>
+                            <tr align="center" style="border-color: black;">
+                                <td colspan="2"> 
+                                    <h2> 
+                                        <input type="submit" value="SUBMIT" style=" width: 200px; border-color: black; background-color: rgb(206, 199, 199);">
+                                    </h2> 
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </form>
+                <br>
+                <a href="custlogin" class="btn btn-primary btn-lg" role="button" > <h4> Login Page </h4></a><br><br>
+            </fieldset> 
+        </div>      
+    </body>
+</html>

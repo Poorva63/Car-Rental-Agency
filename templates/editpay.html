@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>UPDATE PAYMENT</title>
+    </head>
+    <body style="background-color: powderblue;">
+        <div align="center"><br><br>
+            {% include 'navbara.html' %}
+            <br><br>
+            <h1> <u> EDIT PAYMENT INFORMATION </u> </h1><br><br>
+            
+            <fieldset>
+                <form action="/updatepay" method="post">
+                    <div class="jumbotron">
+                        <table border="5" cellpadding="10px" cellspacing="10px">
+                            <tr align="center" style="border-color: black;">
+                                <td>
+                                    <label for="p1"> <h4> <b> CUST_NAME: </b> </h4> </label>
+                                </td>
+                                <td><h4>
+                                    <input type="text"  name="p1" id="p1" style="background-color: white;" value="{{plist[0]}}"></h4>
+                                </td>
+                            </tr>
+
+                            <tr align="center" style="border-color: black;">
+                                <td>
+                                    <label for="p2"> <h4> <b> CAR_BRAND: </b> </h4> </label>                                
+                                </td>
+                                <td><h4>
+                                    <input type="text"  name="p2" id="p2" style="background-color: white;" value="{{plist[1]}}"></h4>
+                                </td>
+                            </tr>
+
+                            <tr align="center" style="border-color: black;">
+                                <td>
+                                    <label for="p2"> <h4> <b> CAR_TYPE: </b> </h4> </label>                                
+                                </td>
+                                <td><h4>
+                                    <input type="text"  name="pp" id="pp" style="background-color: white;" value="{{plist[2]}}"></h4>
+                                </td>
+                            </tr>
+
+                            <tr align="center" style="border-color: black;">
+                                <td>
+                                    <label for="p3"> <h4> <b> CUST_CONTACT_NO: </b> </h4> </label>
+                                </td>
+                                <td><h4>
+                                    <input type="number"  name="p3" id="p3" style="background-color: white;" value="{{plist[3]}}"></h4>
+                                </td>
+                            </tr>
+
+                            <tr align="center" style="border-color: black;">
+                                <td>                                    
+                                    <label for="p4"> <h4> <b> RENTAL_DATE: </b> </h4> </label>                                
+                                </td>
+                                <td><h4>
+                                    <input type="date"  name="p4" id="p4" style="background-color: white;" value="{{plist[4]}}"></h4>
+                                </td>
+                            </tr>
+
+                            <tr align="center" style="border-color: black;">
+                                <td>                                   
+                                    <label for="p5"> <h4> <b> RETURN_DATE: </b> </h4> </label>                                
+                                </td>
+                                <td><h4>
+                                    <input type="date"  name="p5" id="p5" style="background-color: white;" value="{{plist[5]}}"></h4>
+                                </td>
+                            </tr>
+
+                            <tr align="center" style="border-color: black;">
+                                <td>                                   
+                                    <label for="payment"> <h4> <b> PAYMENT_MODE: </b> </h4> </label>                                
+                                </td>
+                                <td><h4>
+                                    <select name="payment" value="{{plist[6]}}">
+                                        <option value="GPAY"> <h4> <b> GPAY </b> </h4></option>
+                                        <option value="PAYTM"> <h4> <b> PAYTM</b></h4> </option>
+                                        <option value="Cash"> <h4><b> CASH</b></h4> </option>
+                                        </h4>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr align="center" style="border-color: black;">
+                                <td>
+                                    <label for="p7"><h4> <b> PAYMENT_AMOUNT </b> </h4> </label>
+                                </td>
+                                <td><h4>
+                                    <input type="number" name="p7" id="p7" style="background-color: white; border-color: black;" value="{{plist[7]}}"></h4>
+                                </td>
+                            </tr>
+
+                            <tr align="center" style="border-color: black;">
+                                <td colspan="2"> <h4> <input type="reset"  name="Reset" value="RESET" style="width:150px; border-color: black; background-color: rgb(206, 199, 199);"></h4> </td>
+                            </tr>
+                            <br>
+                            <tr align="center" style="border-color: black;">
+                                <td colspan="2"> <h4> <input type="submit" name="submit" value="SUBMIT" style="width:150px; border-color: black; background-color: rgb(206, 199, 199);"> </h4> </td>
+                            </tr>
+                        </table>
+                        <br><br>
+                    </div>
+                </form>
+                <br>
+            </fieldset> 
+        </div> 
+    </body>
+</html>
