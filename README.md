@@ -1,6 +1,7 @@
 CAR-RENTAL-AGENCY
 
 Car rental website is developed using python with falsk framework and SQL.
+
 i. The frontend used is HTMl,CSS
 
 ii. The backend used is Sql and Python with Flask framework.
